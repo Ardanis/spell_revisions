@@ -1,0 +1,72 @@
+TO-DO List:
+- Fog Cloud added to druid spellbook
+- Resist Fire and Cold reduced casting time?
+- Holy Smite...
+- Unholy Blight...
+- clerics get "Spell Immunity" as per PnP?
+- Symbol of Death cause level drain
+- Reflected Image replaced by Phantasmal Force
+- Flame Arrow allow no save, bypass magic resistance
+- Flesh to Stone re-worked (hold2 opcode?, sec type to cure)
+...
+
+V4 - Beta 5 (August 1st 2014)
+- re-arranged sec types
+- temporary manual solution for few Detectable Spells related issues (will be replaced by Arda's code)
+- Cause Wound spells, Slay Living and Harm have been heavily revised (more details online)
+- Cause Light Wounds and Cause Moderate Wounds added to cleric spellbook
+- Fog Cloud thac0 penalties fixed
+- Haste, Improved Haste and Slow now fully cancel each other thanks to a dedicated sec type
+- Haste duration set to 1 turn (increased for low levels, decreased for high levels)
+- Slow thac0/AC/save vs. breath penalties increased from -1 to -2 (vanilla had -4 thac0/AC)
+
+V4 - Beta 4 (July 24th 2014)
+- added a new optional component: "Spell Deflection blocks AoE spells"
+- minor text fixes (e.g. typos, erroneous BGEE string references, etc.)
+- minor fixes to various spells (e.g. power lvl, duration of some effects, etc.)
+- Spell Immunity "replaced" by Wall of Dispel Magic (immunity to dispel, dispel on attackers)
+- Spell Shield restored to its classic version (SCS was overriding it anyway)
+- Disintegrate automatically destroy a Mordenkainen's Sword
+- WotB save penalty changed from -6 to -2
+- Larloch's Energy Drain effects on the caster last 5 turns instead of 1
+- Black Blade of Disaster school changed to Conjuration (minor "fixes" for BGEE)
+- Absolute Immunity grants invulnerability to both physical and magical dmg
+
+V4 - Beta 3 (July 22th 2014)
+- tons of small "adjustments" to make the build work fine with BGEE
+- Sanctuary duration reduced to 6 rounds
+- Armor of Faith grants 10% res against all dmg types, 2 turns duration
+- Draw Upon Divine Might capped at +3 STR/DEX/CON at 9th level, no longer causes fatigue
+- Grease save against knockdown is made at +2 bonus
+- Charm Person save is made at +2 bonus (it was +3 in vanilla)
+- Blindness replaced by Fog Cloud (halved line of sight, -4/-8 melee/ranged thac0 penalty)
+- Haste fatigue duration reduced from 5 to 3 rounds
+- Lightning Bolt dmg dice reverted from d8 to d6, save penalty increased from -2 to -4, projectile speed increased from 20 to 60
+- Skull Trap dmg dice reverted from d4 to d6 but capped at 10d6 (SCS did the same to balance its own 3x triggers)
+- Dire Charm save is made with no penalty
+- Hold Monsters save penalty reverted from -4 to -2
+- Phantom Blade no longer deals increased dmg vs. undead
+- Spell Shield now grants immunity to dispel effects (only a temporary solution - part of a bigger plan)
+- Horrid Wilting save penalty reduced from -6 to -2
+- Bigby's Clenched Fist "replaced" by Bigby's Icy Grasp (dmg type changed to cold, small refinements)
+
+V4 - Beta 2 (July 21th 2014)
+- enabled all components for BGEE and BG2EE
+- Blade Barrier no longer allows a save, dmg reduced from 3d6 every 3 sec to 1d6
+- Regeneration fixed so that only clerics get the 7th lvl variant
+- Non-detection tweaked to properly work against Detect Invisibility & True Seeing
+- Protection from Missiles duration reduced from 2 turns to 1
+- Protection from Normal Weapons can now be used with PfMW
+- Cone of Cold casting time reduced from 5 to 1, added a 1 sec pause (a la Burning Hands & Agannazar's Scorcher)
+- Breach no longer removes Protection from Evil, Magic Circle against Evil, Fire Shields and Blade Barrier
+- Spell Deflection spells fixed and tweaked
+- Ruby Ray of Reversal reverted to single target as per vanilla
+- Khelben's Warding Whip school changed to Evocation (first step of a bigger plan)
+
+V4 - Beta 1 (July 21th 2014)
+- first closed beta
+
+TO DO:
+- patch code for Remove Disabled Spells from Spell Selection Screens does not work with BGEE
+- re-enable Gust of Wind loading screen text changes
+- re-enable Flame Arrow variant for Irenicus cutscene, disabled for BGEE compatibility
