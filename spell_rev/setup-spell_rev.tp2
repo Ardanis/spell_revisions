@@ -156,7 +156,11 @@ DESIGNATED 50
 REQUIRE_PREDICATE (ENGINE_IS ~soa tob bgee bg2ee~) @8996 // ~This mod is designed for the Baldur's Gate II engine and will not function on other games.~
 REQUIRE_COMPONENT ~setup-spell_rev.tp2~ 0 @8999 // ~This component requires that the main Spell Revisions component be installed.~
 
-COPY ~spell_rev\shared\hidespl.2da~ ~override~
+ACTION_IF FILE_EXISTS ~tobex_ini/tobexcore.ini~ BEGIN
+  COPY ~spell_rev\shared\hidespl_tobex.2da~ ~override\hidespl.2da~
+END ELSE BEGIN
+  COPY ~spell_rev\shared\hidespl_bgee.2da~ ~override\hidespl.2da~
+END
 
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
 ////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
